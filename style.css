@@ -1,0 +1,788 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Open+Sans:wght@400;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans",sans-serif;
+  }
+  
+  /* Body and background */
+  body {
+    color: #ffffff;
+    line-height: 1.5;
+    overflow-x: hidden;
+    background-image: linear-gradient( 109.6deg,  rgba(20,30,48,1) 11.2%, rgba(36,59,85,1) 91.1% );
+  }
+
+  
+  /* Header and nav */
+    header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    background-image: linear-gradient( 109.6deg,  rgba(20,30,48,1) 11.2%, rgba(36,59,85,1) 91.1% );;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.148);
+    top: 0;
+    z-index: 1000;
+    padding: 1rem 2rem;
+  }
+  
+  .logoicon {
+    width: 80px;
+    height: auto;
+    margin-left: 20px;
+  }
+  
+  .nav-contain {
+    position: relative;
+  }
+  
+  .nav-contain .bar {
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  #check {
+    display: none;
+  }
+  
+  .nav-contain ul {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-right: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-contain li {
+    display: inline-block;
+    margin: 0 30px;
+  }
+  
+  .nav-contain li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 6px;
+    transition: 0.3s ease;
+  }
+  
+  .nav-contain li a:hover {
+    background-color: tomato;
+    color: #fff;
+    font-weight: 700;
+    box-shadow: 0 0 10px rgba(255, 99, 71, 0.6);
+  }
+  
+  /* Hero section */
+  .important {
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+    
+  }
+  
+  .info {
+    flex: 1;
+    max-width: 100%;
+    width: 100%;
+    padding: 2rem;
+    margin: 10px;
+    
+  }
+  
+  .info h1 {
+    font-size: 50px;
+  }
+  
+  .info h3 {
+    font-size: 18px;
+    line-height: 1.8;
+    letter-spacing: 1.5px;
+  }
+  
+  .info span {
+    color: tomato;
+    font-weight: bold;
+  }
+  
+  /* Button */
+  .button {
+    color: #000000;
+    text-decoration: none;
+    margin-top: 40px;
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.2s linear;
+  }
+  
+  .button:hover {
+    box-shadow: 0 0 40px tomato;
+    color: white;
+    scale: 1.1;
+    background-color: tomato;
+  }
+  
+  /* Social icons */
+  .icon {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 100%;
+    width: 20%;
+    
+    font-size: 25px;
+    transition: 0.2s linear;
+  }
+  
+  .icon i:hover {
+    color: tomato;
+    scale: 1.1;
+  }
+  
+  .image {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+    padding: 1rem;
+    
+  }
+  
+  .boy {
+    max-width: 100%;
+    width: 90%;
+    height: auto;
+    transition: transform 0.5s ease;
+  }
+  
+  .boy:hover {
+    transform: scale(1.05);
+  }
+  .about .about-details h2{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 140px;
+    
+  }
+  .about .about-details p{
+    font-size: 20px;
+    text-align: center;
+    
+    padding: 10px 10px;
+    margin-left: 10px;
+    
+    letter-spacing: 1.5px;
+    
+  }
+  .about .about-details h3{
+    text-align: center;
+    font-size: 19px;
+    letter-spacing: 1px ;
+
+  }
+  .about .image-busy{
+    min-width: 300px;
+    flex: 1;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .about .busy-boy{
+    width: 450px;
+    height: auto;
+    transition: 0.5s ease;
+
+  }
+  .about .busy-boy:hover{
+    transform: scale(1.05);
+  }
+  .skills h2{
+    text-align: center;
+    padding-top: 140px;
+    
+  }
+  .skills .drop{
+    font-size: 20px;
+    text-align: center;
+    
+    padding: 20px 0;
+    margin-left: 10px;
+    
+    letter-spacing: 1.5px;
+    
+    
+  }
+  .skills .skill{
+    padding: 30px 20px;
+    margin-left: 80px;
+    margin-bottom: 25px;
+    width: 600px;
+    
+    
+    
+  }
+  .skills .skill p{
+    margin: 0 0 5px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .skills .progress{
+    background-color: #ddd;
+    height: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .skills .bar{
+    height: 100%;
+    background: linear-gradient(90deg, #a100ff, #5000ff);
+  }
+  .image-skill {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+    padding: 1rem;
+    
+    
+   
+  }
+  .skill-pic{
+    display: flex;
+  }
+  .skill-boy {
+    width: 800px;
+    height: auto;
+    
+    
+    transition: transform 0.5s ease;
+  }
+  
+  .skill-boy:hover {
+    transform: scale(1.05);
+  }
+  .skills .git-btn a{
+    text-decoration: none;
+    color: black;
+  }
+  .skills .git-btn{
+    
+    color: #000000;
+    text-decoration: none;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+
+    background-color: rgb(255, 255, 255);
+    padding: 10px 15px;
+    border-radius: 8px;
+    max-width: 100%;
+    width: 150px;
+    margin: auto;
+    font-weight: 600;
+    transition: 0.2s linear;
+    cursor: pointer;
+
+  }
+  .skills .git-btn:hover {
+    box-shadow: 0 0 40px tomato;
+    color: white;
+    scale: 1.1;
+    background-color: tomato;
+  }
+  .services h2{
+    text-align: center;
+    padding-top: 140px;
+    
+  }
+  .services p{
+    font-size: 20px;
+    text-align: center;
+    
+    padding: 20px 0;
+    margin-left: 10px;
+    
+    letter-spacing: 1.5px;
+    
+  }
+  .services .list-services{
+    padding: 10px 0px;
+    margin-bottom: 20px;
+    max-width: 800px;
+    text-align: left;
+    margin-left: 55px;
+    
+  }
+  .services .list-services h3{
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  .services .list-services ul{
+    list-style: none;
+    padding: 0;
+  }
+  .services .list-services li{
+    font-size: 17px;
+    line-height: 40px;
+    letter-spacing: 1px;
+    margin: 8px 0;
+  }
+  .service-all{
+    display: flex;
+  }
+  .services .service-image{
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+    padding: 1rem;
+    
+  }
+  .services .show-boy{
+    width: 700px;
+    margin-top: 70px;
+    transition: 0.3s ease;
+  }
+  .services .show-boy:hover{
+    transform: scale(1.05);
+  }
+  .services .cta a{
+    text-decoration: none;
+    color: #4869fc;
+    
+  }
+  
+  .contact-full{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 50px 10px;
+    
+    
+    
+    
+  }
+  .contact .contact-details{
+    background: linear-gradient( to top left, #022F40, #38AECC);
+    max-width: 100%;
+    width: 35%;
+    
+    
+    
+  }
+  .contact .contact-header h2{
+    text-align: center;
+    padding-top: 140px;
+  }
+  .contact .contact-header p{
+    font-size: 20px;
+    text-align: center;
+    
+    padding: 20px 0;
+    margin-left: 10px;
+    
+    letter-spacing: 1.5px;
+    
+  }
+  .contact .contact-details .contact-formwork-header h1{
+    margin-left: 80px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    letter-spacing: 1px;
+    color: white;
+  }
+  .contact .contact-details .contact-formwork-header p{
+    
+    
+    
+    margin-left: 25px;
+    padding: 10px 0;
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+    line-height: 25px;
+  } 
+  .contact .contact-details .contact-formwork h3{
+    margin-left: 25px;
+    color: white;
+    letter-spacing: 1px;
+    padding: 10px 0;
+  }
+  .contact .contact-details .contact-formwork ul{
+    list-style: none;
+    margin-left: 45px;
+    line-height: 45px;
+  }
+  .contact .contact-details .contact-formwork li{
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+  .contact .contact-form{
+    background-color: rgb(240, 233, 233);
+    max-width: 100%;
+    width: 35%;
+  }
+  .contact .contact-form h3{
+    color: rgb(41, 44, 45) ;
+    margin-left: 50px;
+    padding: 10px 0;
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+  .contact .contact-form .contact-form-main {
+    margin-left: 60px;
+    max-width: 100%;
+    width: 100%;
+    
+   
+    
+    
+
+  }
+  .contact .contact-form .contact-form-main input{
+    text-align: left;
+    border: rgba(0, 0, 0, 0.208) solid 1px;
+    border-radius: 7px;
+    position: relative;
+    width: 70%;
+    height: 40px;
+    padding: 0px 10px;
+    margin: 2px 0;
+
+  }
+  .contact .contact-form .contact-form-main .message{
+    width: 70%;
+    height: 150px;
+    position: relative;
+    border: rgba(0, 0, 0, 0.208) solid 1px;
+    border-radius: 7px;
+    padding: 10px 10px;
+    margin: 2px 0;
+  }
+  .contact .contact-form .contact-form-main input::placeholder{
+    
+    opacity: 100%;
+    
+  }
+  .contact .contact-form .contact-form-main .message::placeholder{
+    opacity: 100%;
+  }
+  .contact .contact-form .contact-form-main .btn{
+    width: 70%;
+    height: 45px;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    margin-left: 0px;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 400;
+    transition: 0.3s ease;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; ;
+    cursor: pointer;
+    background: linear-gradient( to top left, #022F40, #38AECC);
+  }
+  .contact .contact-form .contact-form-main .btn:hover{
+    transform: scale(1.1);
+  }
+    
+
+ @media (max-width: 1080px){
+  .icon {
+      margin: auto;
+    }
+    
+    .info{
+      padding: 1rem;
+      
+
+    }
+    .boy{
+      width: 80%;
+      position: relative;
+      
+      
+    }
+    .important{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 1rem;
+      width: 80%;
+      margin: auto;
+      
+    }
+    .skill-pic, .service-all{
+      flex-direction: column;
+      align-items: left;
+    }
+    .contact .contact-details,
+    .contact .contact-form{
+      width: 50%;
+      
+      
+      
+    }
+  
+    .contact .contact-form .contact-form-main input {
+      padding: auto;
+      margin-right: 100px;
+      float: left;
+      width: 80%;
+      
+      
+    }
+    .contact .contact-form .contact-form-main .message{
+      padding: auto;
+      margin-right: 100px;
+      float: left;
+      width: 80%;
+    }
+  
+    .contact .contact-form .contact-form-main .btn {
+      width: 80%;
+      padding: 8px;
+      margin: 10px 0;
+      
+    }
+    .skill-boy, .show-boy{
+      width: 90%;
+    }
+    
+    .skills .skill{
+      margin-left: 0;
+      
+      
+    }
+ }
+
+  @media (max-width: 768px) {
+    .nav-contain .bar {
+      display: block;
+    }
+  
+    .nav-contain ul {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 0px;
+      background-image: linear-gradient( 109.6deg,  rgba(20,30,48,1) 11.2%, rgba(36,59,85,1) 91.1% );
+      min-width: 400px;
+      
+      
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      border-radius: 8px;
+      transition: all 0.4s ease-in-out;
+    }
+  
+    #check:checked ~ ul {
+      display: flex;
+    }
+  
+    .nav-contain li {
+      margin: 10px 0;
+      text-align: center;
+    }
+  
+    .nav-contain li a {
+      padding: 10px 10px;
+    }
+  
+    .icon {
+      margin: auto;
+    }
+    
+    .info{
+      padding: 1rem;
+      
+
+    }
+    .boy{
+      width: 80%;
+      position: relative;
+      
+      
+    }
+    .important{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 1rem;
+      width: 80%;
+      margin: auto;
+      
+    }
+    .skill-pic, .service-all{
+      flex-direction: column;
+      align-items: left;
+    }
+    .contact .contact-details,
+    .contact .contact-form{
+      width: 60%;
+      
+      
+      
+    }
+  
+    .contact .contact-form .contact-form-main input {
+      padding: auto;
+      margin-right: 100px;
+      float: left;
+      width: 75%;
+      
+      
+    }
+    .contact .contact-form .contact-form-main .message{
+      padding: auto;
+      margin-right: 100px;
+      float: left;
+      width: 75%;
+    }
+  
+    .contact .contact-form .contact-form-main .btn {
+      width: 75%;
+      padding: 8px;
+      margin: 10px 0;
+      
+    }
+    .skill-boy, .show-boy{
+      width: 90%;
+    }
+    
+    .skills .skill{
+      margin-left: 0;
+      
+      
+    }
+  }
+
+
+  @media (max-width: 560px) {
+    .info h1 {
+      font-size: 32px;
+    }
+  
+    .info h3 {
+      font-size: 16px;
+      letter-spacing: 1px;
+    }
+    .important{
+      flex-direction: column;
+      text-align: center;
+      padding: 1rem;
+      width: 80%;
+      
+    }
+
+  
+    .button {
+      padding: 6px 12px;
+      font-size: 14px;
+    }
+  
+    .nav-contain ul {
+      width: 100%;
+      right: 0;
+      top: 55px;
+    }
+  
+    .skills .skill {
+      width: 100%;
+      margin-right: 300px;
+      padding: 20px 10px;
+    }
+    .skills .git-btn{
+      padding: 10px ;
+      width: 120px;
+      font-size: 14px;
+    }
+    .about .about-details p, .services p, .contact .contact-header p{
+      font-size: 17px;
+      
+    }
+    .skills .skill .drop p{
+      font-size: 17px;
+    }
+  
+    
+  
+    .contact .contact-details,
+    .contact .contact-form{
+      width: 100%;
+      
+      
+      
+    }
+  
+    .contact .contact-form .contact-form-main input {
+      padding: auto;
+      margin-right: 100px;
+      float: left;
+      width: 65%;
+      
+      
+    }
+    .contact .contact-form .contact-form-main .message{
+      padding: auto;
+      margin-right: 100px;
+      float: left;
+      width: 65%;
+    }
+  
+    .contact .contact-form .contact-form-main .btn {
+      width: 65%;
+      padding: 8px;
+      margin: 10px 0;
+      
+    }
+    .boy{
+      width: 80%;
+    }
+    .about .busy-boy{
+      width: 60%;
+    }
+    .services .show-boy{
+      width: 100%;
+    }
+    .skills .skill-boy{
+      width: 100%;
+    }
+  
+    
+  }
+
+  @media(max-width:380px){
+    .info h1 {
+      font-size: 20px;
+    }
+  
+    .info h3 {
+      font-size: 13px;
+      letter-spacing: 1px;
+    }
+    .important{
+      flex-direction: column;
+      text-align: center;
+      padding: 1rem;
+      width: 80%;
+      
+    }
+    
+    
+  }
+  
+  
